@@ -58,10 +58,21 @@
     }
     
     #Github {
-	   border: none;
+	    border: none;
         grid-template-rows: 1fr 1fr;
         grid-gap: 1em;
 }
+    .About img{
+	float: left;
+    height: 200px;
+}
+    .About p{
+    font-size: 16px;
+}
+    .About h1{
+	font-size: 20px;
+}
+    
     
     #Photoslider {
 	border: none;
@@ -69,61 +80,43 @@
     
     @keyframes Images{
         
-        0% {
-            left: 0%;
+        0%{
+            left: 0px;
         }
         
-        5%{
-            left: -25%;
+        10%{
+            left: -100px
         }
         
-        10% {
-            left: -50%;
+        20%{
+            left: -200px;
         }
-        15%{
-            left: -75%;
+        
+        30%{
+            left: -400px;
         }
-        20% {
-            left: -100%;
+        
+        40%{
+            left: -500px;
         }
-        30% {
-            left: -125%;
-        }
-        40% {
-            left: -150%;
-        }
-        45%{
-            left: -175%;
-        }
+        
         50%{
-            left: -200%;
-        }
-        55%{
-            left: -225%;
-        }
-        60%{
-            left: -250%;   
+            left: -600px    
         }
         
-        70%{
-            left: -275%;
+        60%{
+            left: -900px;
         }
         
         80%{
-            left: -300%;
-        }
-        85%{
-            left: -325%;
-        }
-        90%{
-            left: -350%;
-        }
-        95%{
-            left: -375%;
+            left: -1000px;
         }
         
+        90%{
+            left: -1250px;
+        }
         100%{
-            left: -400%;
+            left: -1500px;
         }
     }
     
@@ -132,7 +125,7 @@
     }
     
     #Images{
-        width: 400%;
+        width: 300%;
         border: none;
     }
     
@@ -140,6 +133,8 @@
         float: left;
         margin-left: .55%;
         margin-right: .55%;
+        max-height: 90%;
+        width: 500px;
     }
     
     .Home p{
@@ -147,12 +142,25 @@
     }
     
     #Photoslider figure {
-	position: relative;
-    width: 400%;
-    margin: 0;
-    left: 0;
-    animation: 26s Images infinite;
+	   position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        animation: 16s Images infinite;
 }
+    
+    @media screen and (max-width: 450px){
+        h1{
+            font: 20px;
+        }    
+        p{
+            font: 12px;
+        }
+        img{
+            max-height: 50%;
+        }
+        
+    }
     
 </style>
 
@@ -182,10 +190,10 @@
                     </figure>
                 </div>
             </div>
-            <div class="About" align="center">
+            <div class="About" align="justified">
+                <img src ="Me_Portfolio.JPG">
                 <h1>About</h1>
                 <p>Since I was little, I always enjoyed working with technology. Growing up, I learned a lot about working with technology and it's implementation to modern society. My mission is to become a freelance programmer and independent game developer. Enjoy Philosophy, Programming, Video Games and Technology in general. I am proficient in these programming languages: HTML5, CSS, JQuery, PHP, and Python. While I do prefer Front-End development, I am more than willing to learn Back-End. I am also proficient in photo editing and graphic design. I plan on freelancing my services out to the world, as I have a passion to travel a lot, but is more than willing to work with a client for extended periods of time.</p>
-                <img src ="Me_Portfolio.JPG">
                 <h1>Experience</h1>
                 <p>I primarily learned from self-teaching myself how to program, using websites like Khan Academy, Youtube, and Sololearn to understand programming. I personally use Brackets and VS Studio to create/edit most of my code that deals with Web Design. My artwork is often 2d pixel art, but I working on branching to 3d modeling.</p>
                 <h1>Gaming Visionary</h1>
