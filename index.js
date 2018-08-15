@@ -1,14 +1,14 @@
 $(document).ready(() =>{
     $('div.Home').show();
     $('div.About').hide();
-    $('div.Contact').hide();
+    $('div.contact').hide();
     $('div.Projects').hide();
     $('div.Blog').hide();
     
     $('#Home').on('click', () =>{
         $('div.Home').show();
         $('div.About').hide();
-        $('div.Contact').hide();
+        $('div.contact').hide();
         $('div.Projects').hide();
         $('div.Blog').hide();
     })
@@ -16,7 +16,7 @@ $(document).ready(() =>{
     $('#About').on('click', () =>{
         $('div.Home').hide();
         $('div.About').show();
-        $('div.Contact').hide();
+        $('div.contact').hide();
         $('div.Projects').hide();
         $('div.Blog').hide();
     })
@@ -24,14 +24,14 @@ $(document).ready(() =>{
     $('#Contact').on('click', () =>{
         $('div.Home').hide();
         $('div.About').hide();
-        $('div.Contact').show();
+        $('div.contact').show();
         $('div.Projects').hide();
         $('div.Blog').hide();
     })
     $('#Projects').on('click', () =>{
         $('div.Home').hide();
         $('div.About').hide();
-        $('div.Contact').hide();
+        $('div.contact').hide();
         $('div.Projects').show();
         $('div.Blog').hide();
     })
@@ -39,7 +39,7 @@ $(document).ready(() =>{
     $('#Blog').on('click', () =>{
         $('div.Home').hide();
         $('div.About').hide();
-        $('div.Contact').hide();
+        $('div.contact').hide();
         $('div.Projects').hide();
         $('div.Blog').show();
     })
