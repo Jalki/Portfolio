@@ -9,27 +9,29 @@
 <style>
     
     body{
-        background: dimgray;
+        background: black;
     }
     
     nav{
-        width: 99%;
-        height: 120px;
+        width: 100%;
+        height: 12.5%;
+        background: black;
+        border-bottom: .1em gold solid;
     }
     
     .Nava{
-        padding : .75%;
+        width: 99.5%;
+        padding-top : .175%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-column-gap: 1.25%;
-        width: 100%;
-        height: 70%;
+        grid-column-gap: 0.026%;
+        height: 40%;
     }
     
     .Navi{
-        border: .1em gold solid;
         background-color: black;
         width: 100%;
+        border: .0007em gold solid;
     }
     
     article{
@@ -39,115 +41,151 @@
     }
     
     article div{
-        padding: .25em;
-        border: .4em black solid;
+        padding: .075em;
+        border-left: .3em black solid;
+        border-right: .3em black solid;
+    }
+    
+    #Mains{
+        background: black;
     }
     
     h1{
-        font: 36px;
+        font: 18px;
         color: white;
     }
     
     p{
-        font: 28px;
-        color: gold;
+        font: 8px;
+        color: white;
     }
     
-    .contact{
-        grid-template-rows: 1fr 1fr 1fr;
+    #CTOP{
+        grid-row: 1fr 1fr;
+        grid-gap: 2.5em;
+        border: none;
     }
     
-    #Github {
-	    border: none;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1em;
+    #CBELOW {
+	    grid-row: 1fr 1fr;
+        grid-gap: 2.5em;
+        border: none;
 }
-    .About img{
-	float: left;
-    height: 200px;
+
+    /*This is for the contact buttons!*/
+    
+    #OBUT {
+	    height: 240px;
+        width: 70px;
+        background-image: url(sara-logo.png);
+        background-size: 70px 240px;
+        background-repeat: no-repeat;
+        display: inline-block;
 }
+    
+    #SBUT {
+	    height: 135px;
+        width: 240px;
+        background-image: url(soundcloud.png);
+        background-size: 240px 135px;
+        background-repeat: no-repeat;
+        display: inline-block;
+}
+    
+    #GBUT {
+	    height: 70px;
+        width: 240px;
+        background-image: url(Github.png);
+        background-size: 240px 70px;
+        background-repeat: no-repeat;
+        display: inline-block;
+}   
+    
+    #HBUT {
+	    height: 240px;
+        width: 240px;
+        background-image: url(HackerRank.png);
+        background-size: 240px 240px;
+        background-repeat: no-repeat;
+        display: inline-block;
+}
+    
+    
     .About p{
     font-size: 16px;
 }
+    
     .About h1{
 	font-size: 20px;
 }
     
-    
-    #Photoslider {
+    #About_About {
 	border: none;
 }
     
-    @keyframes Images{
-        
-        0%{
-            left: 0px;
-        }
-        
-        10%{
-            left: -100px
-        }
-        
-        20%{
-            left: -200px;
-        }
-        
-        30%{
-            left: -400px;
-        }
-        
-        40%{
-            left: -500px;
-        }
-        
-        50%{
-            left: -600px    
-        }
-        
-        60%{
-            left: -900px;
-        }
-        
-        80%{
-            left: -1000px;
-        }
-        
-        90%{
-            left: -1250px;
-        }
-        100%{
-            left: -1500px;
-        }
+    #About_About h1{
+        margin-left: 12%;
+        margin-right: 12%;
     }
     
-    #Photoslider{
-        overflow: hidden;
+    #Experience_About {
+	border: none;
+}
+    
+    #Experience_About h1{
+        margin-left: 12%;
+        margin-right: 12%;
     }
     
-    #Images{
-        width: 300%;
-        border: none;
+    #Experience_About img{
+        width: 33%;
     }
     
-    #Images img{
-        float: left;
-        margin-left: .55%;
-        margin-right: .55%;
-        max-height: 90%;
-        width: 500px;
+    
+    #Visionary_About {
+	border: none;
+}
+    
+    #Visionary_About h1{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    #Programming_About {
+	border: none;
+}
+    
+    #Programming_About h1{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    #Artisan_About {
+	border: none;
+}
+    
+    #Artisan_About h1{
+        margin-left: 12%;
+        margin-right: 12%;
     }
     
     .Home p{
         border-bottom: 2px solid goldenrod;
     }
     
-    #Photoslider figure {
-	   position: relative;
-        width: 400%;
-        margin: 0;
-        left: 0;
-        animation: 16s Images infinite;
-}
+    #Frontface{
+        border: none;
+    }
+    
+    #Image{
+        width: 90%;
+        border: none;
+    }
+    
+    #FF{
+        width: 99%;
+        opacity: .81;
+    }
     
     @media screen and (max-width: 450px){
         h1{
@@ -159,8 +197,8 @@
         img{
             max-height: 50%;
         }
-        
     }
+    
     
 </style>
 
@@ -179,47 +217,58 @@
             <div class="Home" align="center">
                 <h1>The Offical portfolio of Jaleen Bowens-Kelly</h1>
                 <p>Providing services in these areas:</p>
-                <div id="Photoslider">
+                <div id="Frontface">
                     <figure>
-                        <div id = "Images">
-                            <img src="Webdesign%20Pic.png">
-                            <img src="Music_Image.png">
-                            <img src="Art_Image.png">
-                            <img src="Game_Design.png">
-                        </div>
+                            <div id="Front-End">
+                                <img src="HTMLCSSIMAGE.png">
+                                <p>Front End Webdevelopment</p>
+                            </div>
+                            <div id="Game-Development">
+                                
+                                <p>Game Design and Development</p>
+                            </div>
+                            <div>
+                                <p>Music and Art</p>
+                            </div>
+                            <div>
+                                <p>Python Programming</p>
+                            </div>
                     </figure>
                 </div>
             </div>
-            <div class="About" align="justified">
-                <img src ="Me_Portfolio.JPG">
+            <div class="About" align="center">
+                <div id = "About_About">
                 <h1>About</h1>
                 <p>Since I was little, I always enjoyed working with technology. Growing up, I learned a lot about working with technology and it's implementation to modern society. My mission is to become a freelance programmer and independent game developer. Enjoy Philosophy, Programming, Video Games and Technology in general. I am proficient in these programming languages: HTML5, CSS, JQuery, PHP, and Python. While I do prefer Front-End development, I am more than willing to learn Back-End. I am also proficient in photo editing and graphic design. I plan on freelancing my services out to the world, as I have a passion to travel a lot, but is more than willing to work with a client for extended periods of time.</p>
+                </div>
+                <div id = "Experience_About">
                 <h1>Experience</h1>
-                <p>I primarily learned from self-teaching myself how to program, using websites like Khan Academy, Youtube, and Sololearn to understand programming. I personally use Brackets and VS Studio to create/edit most of my code that deals with Web Design. My artwork is often 2d pixel art, but I working on branching to 3d modeling.</p>
+                <p>I primarily learned from self-teaching myself how to program, using websites like Khan Academy, Youtube, and Sololearn to understand programming. I personally use Brackets and VS Studio to create/edit most of my code that deals with Web Design. My artwork is often 2d pixel art, but I working on branching to 3d modeling. I have completed Sololearn's course on HTML,CSS,and JQuery.</p>
+                <img src ="HTMLCert.jpg">
+                <img src ="PHPCert.jpg">
+                <img src ="JQueryCert.jpg">
+                </div>
+                <div id = "Visionary_About">
                 <h1>Gaming Visionary</h1>
                 <p>I've been creating simple games since 2014 and have learned a lot about what it means to be a game designer, artist, musician, and programmer. I value the creative freedom and technical prowess that creating games bring. I believe that no other medium can tell a story like a good game and this industry will pivotal going into the future. My philosophy is to create games all about passion and creativity that would go on to inspire many, like many of the games of my past. I see gaming as a form of art and should be respected as such by all other mediums of entertainment. I am always ready to learn more about what it means to make a great game and the hard effort that it really is.</p>
-                <h1>Programming Marvel</h1>
+                </div>
+                <div id = "Programming_About">
+                <h1>Programmer</h1>
                 <p>Along with creating games, I also spent a lot of time learning programming. My aim is to become relevant in the future of technology. I want to be involved in the evolution of humanity and technology. I am excited to learn more about what it means to be a programmer and software developer.</p>
-                <h1>Artisan's Pride</h1>
+                </div>
+                <div id = "Artisan_About">
+                <h1>Artisan</h1>
                 <p>I always appreciate the nuance that goes into creating art in any medium. I understand the amount of time and dedication it takes to become a great artist, and I want to be considered one of those great artists. I always working on improving my ability to create and expand my ability to create art.</p>
-            </div>
-            <div class="Contact" align="center">
-                <div id="Github">
-                    <img src="GitHub-Mark-64px.png">
-                    <a href="https://github.com/Jalki">Github</a>
-                </div>
-                <div id="Email">
-                    <a href="mailto: jaleenbowenskelly@gmail.com">My Email</a>
-                    <p>jaleenbowenskelly@gmail.com</p>
-                </div>
-                <div id="LinkedIn"><h1>LinkedIn</h1>
-                    <a href="https://www.linkedin.com/in/jaleen-b-27a910132/">My LinkedIn</a>
-                </div>
-                <div id="Opengameart Page"><h1>Opengameart Page</h1>
-                    <a href="https://opengameart.org/users/jalbow">My Public Assests</a>
                 </div>
             </div>
-            <div class="Projects" align="center">
+            <div class="contact">
+                <div id="CTOP"><input id="GBUT" type ="button" onclick="window.location.href = 'https://github.com/Jalki'"  src="Github.png">
+                <input id="SBUT" type="button" onclick="window.location.href = 'https://soundcloud.com/jaleen-bowens-kelly'"  src="soundcloud.png"></div>
+                <div id="CBELOW"><input id="OBUT" type="button" src ="sara-logo.png" onclick ="window.location.href = 'https://opengameart.org/'" value="Opengameart link">
+                <input id="HBUT" type="button" onclick="window.location.href = 'https://www.hackerrank.com/settings/profile'" value="Hackerrank Profile">
+                </div>  
+            </div>
+            <div class="Projects">
                 <h1>Programming Showcase</h1>
                             <h1>Python Exponential Population Growth</h1>
                             <p>A python function that allows user input that continuesly increase the population base on player input. Initial 1.0 version.</p>
@@ -231,11 +280,14 @@
             </div>
             <div class="Blog" align="center">
                 <h1>My Official Blog</h1>
-                <p>A personal Blog dedicated to talking about programming, videogames, and more! It's a great way to learn more about me and what I enjoy doing. Made in Wordpress, it will contain some insight on how I opperate.</p>
-                <a href ="jmbkportfolio.wordpress.com">Link to my Blog</a>
+                <p>A personal Blog dedicated to talking about programming, videogames, and more! It's a great way to learn more about me and what I enjoy doing. Made in Wordpress, it will contain some insight on how I operate.</p>
+                <a href ="jaleenmbkblogs.wordpress.com">Link to my Blog</a>
             </div>
         </article>
     </section>
+    <footer>
+    <p>Welcome to my Porfolio! My name is Jaleen Bowens-Kelly, an active programmer, game developer, and artist. Learn more about me and the things I do from my blogs! Or you can contact me directly if you have any questions.</p>
+    </footer>
 </body>
 </html>
 <script
